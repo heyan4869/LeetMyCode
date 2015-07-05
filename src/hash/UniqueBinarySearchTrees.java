@@ -1,7 +1,7 @@
 // No.96
 // a little tricky
 // How many unique binary search trees that store values 1 ~ n
-package tree;
+package hash;
 
 import java.util.HashMap;
 import java.util.Map;
