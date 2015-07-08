@@ -1,6 +1,6 @@
 // No.83
 
-package list;
+package twopointers;
 
 public class RemoveDuplicatesFromSortedList {
 	public static ListNode deleteDuplicates(ListNode head) {
