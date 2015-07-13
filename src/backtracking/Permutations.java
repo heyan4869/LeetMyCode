@@ -36,7 +36,7 @@ public class Permutations {
 	}
 
 	public static void main(String[] args) {
-		int[] num = { 1, 2, 3 };
+		int[] num = { 1, 2, 3, 4, 5 };
 		List<List<Integer>> res = permute(num);
 		for (int i = 0; i < res.size(); i++) {
 			List<Integer> temp = res.get(i);
