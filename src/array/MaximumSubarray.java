@@ -1,5 +1,6 @@
 // No.53
-// Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
+// Find the contiguous subarray within an array 
+// (containing at least one number) which has the largest sum.
 
 package array;
 
@@ -15,7 +16,6 @@ public class MaximumSubarray {
 			sum = Math.max(sum + nums[i], nums[i]);
 			res = Math.max(res, sum);
 		}
-
 		return res;
 	}
 
