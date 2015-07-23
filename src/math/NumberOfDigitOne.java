@@ -1,5 +1,5 @@
 // No.233
-// tricky!
+// tricky
 // Given an integer n, count the total number of digit 1 appearing 
 // in all non-negative integers less than or equal to n
 
@@ -7,11 +7,22 @@ package math;
 
 public class NumberOfDigitOne {
 	public static int countDigitOne(int n) {
-		int ones = 0;
-		for (long m = 1; m <= n; m *= 10) {
-			ones += (n / m + 8) / 10 * m + (n / m % 10 == 1 ? n % m + 1 : 0);
+		if (n <= 0) {
+			return 0;
 		}
-		return ones;
+		int j = 1;
+		int k = n;
+		int constant = 0;
+		while (k >= 10) {
+			k = k / 10;
+			j = j * 10;
+		}
+		if (k > 1) {
+			constant = j;
+		} else {
+			constant = n % j + 1;
+		}
+		return constant + k * countDigitOne(j - 1) + countDigitOne(n % j);
 	}
 
 	public static void main(String[] args) {
