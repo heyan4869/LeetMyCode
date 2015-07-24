@@ -1,5 +1,5 @@
 // No.179
-// tricky
+// tricky, comparator
 
 package sort;
 
