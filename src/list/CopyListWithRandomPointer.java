@@ -7,10 +7,6 @@ import java.util.Map;
 
 public class CopyListWithRandomPointer {
 	public static RandomListNode copyRandomList(RandomListNode head) {
-		// no need to check this
-		// if (head == null || head.next == null) {
-		// return head;
-		// }
 		Map<RandomListNode, RandomListNode> hm = new HashMap<RandomListNode, RandomListNode>();
 		RandomListNode backup = head;
 		RandomListNode dummy = new RandomListNode(0);
