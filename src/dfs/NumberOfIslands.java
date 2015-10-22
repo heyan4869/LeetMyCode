@@ -9,7 +9,6 @@ public class NumberOfIslands {
 		if (row == 0) {
 			return 0;
 		}
-		// int[][] dp = new int[row][col];
 		int count = 0;
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {

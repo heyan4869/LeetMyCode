@@ -31,7 +31,7 @@ public class FindMinimumInRotatedSortedArray {
 		}
 		// compare the start, mid, end
 		int mid = (start + end) / 2;
-		if (nums[mid] < nums[mid] - 1) {
+		if (nums[mid] < nums[mid - 1]) {
 			return nums[mid];
 		}
 		if (nums[start] < nums[mid] && nums[mid] > nums[end]) {

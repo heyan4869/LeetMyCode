@@ -8,19 +8,21 @@ public class LowestCommonAncestor {
 		if (root == null) {
 			return null;
 		} else if (Math.max(p.val, q.val) < root.val) {
-			if (root.left == p)
+			if (root.left == p) {
 				return p;
-			else if (root.left == q)
+			} else if (root.left == q) {
 				return q;
-			else
+			} else {
 				return lowestCommonAncestor(root.left, p, q);
+			}
 		} else if (Math.min(p.val, q.val) > root.val) {
-			if (root.right == p)
+			if (root.right == p) {
 				return p;
-			else if (root.right == q)
+			} else if (root.right == q) {
 				return q;
-			else
+			} else {
 				return lowestCommonAncestor(root.right, p, q);
+			}
 		} else
 			return root;
 	}

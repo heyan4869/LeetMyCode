@@ -35,7 +35,7 @@ public class ValidPalindrome {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isPalindrome("aA"));
+		System.out.println(isPalindrome(",."));
 	}
 
 }
